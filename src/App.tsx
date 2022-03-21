@@ -5,10 +5,9 @@ const Wrapper = styled(motion.div)`
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: red;
-  flex-direction: column;
 `;
 
 const Box = styled(motion.div)`
