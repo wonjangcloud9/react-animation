@@ -71,6 +71,19 @@ const rowVariants = {
   },
 };
 
+const BoxVariants = {
+  normal: {
+    scale: 1,
+  },
+  hover: {
+    scale: 1.3,
+    y: -50,
+    transition: {
+      delay: 0.5,
+    },
+  },
+};
+
 const offset = 6;
 
 function Home() {
@@ -120,6 +133,9 @@ function Home() {
                   .map((movie) => (
                     <Box
                       key={movie.id}
+                      variants={BoxVariants}
+                      whileHover="hover"
+                      initial="normal"
                       bgPhoto={makeImagePath(movie.backdrop_path, "w500")}
                     />
                   ))}
